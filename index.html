@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+
+<!-- ✅ QUAN TRỌNG CHO MOBILE -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chúc thuytranghere Năm Mới Vui Vẻ 🎉</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --bg1: #8B1E3F;
+    --bg2: #C73E1D;
+    --bg3: #F2B705;
+    --glass: rgba(255, 255, 255, 0.15);
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background: linear-gradient(135deg, var(--bg1), var(--bg2), var(--bg3));
+    background-size: 300% 300%;
+    animation: tetBG 12s ease infinite;
+    color: #fff8ec;
+}
+
+@keyframes tetBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* ===== SLIDER ===== */
+.container {
+    display: flex;
+    width: 500vw;
+    height: 100vh;
+    transition: transform 0.6s ease;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    padding: 60px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    max-width: 780px;
+    width: 100%;
+    padding: 48px 36px;
+    text-align: center;
+    background: var(--glass);
+    backdrop-filter: blur(14px);
+    border-radius: 28px;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.35);
+    animation: fadeUp 0.8s ease both;
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== TEXT (responsive bằng clamp) ===== */
+h1 {
+    font-size: clamp(32px, 6vw, 46px);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: clamp(26px, 5vw, 38px);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: clamp(18px, 4.5vw, 24px);
+    line-height: 2;
+    font-weight: 400;
+}
+
+/* ===== GALLERY ===== */
+.gallery-wrap {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 36px auto;
+}
+
+.gallery-wrap img {
+    position: absolute;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease;
+}
+
+.gallery-wrap img:hover {
+    transform: scale(1.08);
+    z-index: 10;
+}
+
+.big-img {
+    width: 160px;
+    height: 160px;
+    top: 70px;
+    left: 70px;
+    z-index: 2;
+}
+
+.small {
+    width: 70px;
+    height: 70px;
+}
+
+.s1 { top: 0; left: 115px; }
+.s2 { top: 35px; right: 0; }
+.s3 { bottom: 35px; right: 0; }
+.s4 { bottom: 0; left: 115px; }
+.s5 { bottom: 35px; left: 0; }
+.s6 { top: 35px; left: 0; }
+
+/* ===== HEART ===== */
+.heart {
+    position: fixed;
+    bottom: -30px;
+    font-size: 24px;
+    animation: fly 5s linear forwards;
+    filter: drop-shadow(0 0 6px rgba(255,255,255,0.4));
+}
+
+@keyframes fly {
+    from {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-900px) scale(1.6);
+        opacity: 0;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container" id="slider">
+
+<section>
+<div class="card">
+<h1>🌸 Một năm nữa lại qua 🌸</h1>
+<p>
+Năm mới lại đến rồi.<br>
+Chúc cậu ăn ngon hơn một chút 🍽️,<br>
+ngủ sâu hơn một chút 💤,<br>
+và bớt lo những chuyện không đáng lo.
+</p>
+</div>
+</section>
+
+<section>
+<div class="card">
+<h2>🥰 Vài Điều Tớ Yêu Ở Cậu</h2>
+<p>
+Tớ yêu sự quan tâm của cậu dành cho tớ,<br>
+yêu cách cậu hùa theo lúc tớ vô tri 🙊,<br>
+và yêu cả những lúc cậu làm khó tớ 🙄.
+</p>
+</div>
+</section>
+
+<section>
+<div class="card">
+<h2>📷 Chúng Ta</h2>
+
+<div class="gallery-wrap">
+<img src="images/z1.jpg" class="big-img">
+<img src="images/img1.jpg" class="small s1">
+<img src="images/img2.jpg" class="small s2">
+<img src="images/img3.jpg" class="small s3">
+<img src="images/img4.jpg" class="small s4">
+<img src="images/img5.jpg" class="small s5">
+<img src="images/img6.jpg" class="small s6">
+</div>
+
+<p>
+Từng khoảnh khắc bên cậu<br>
+đều là điều tớ muốn giữ thật lâu 🙈.<br>
+Mặc dù tớ hay lọc album 🙄.
+</p>
+</div>
+</section>
+
+<section>
+<div class="card">
+<h2>🤍 Năm Mới Này</h2>
+<p>
+Tớ không dám hứa điều to tát,<br>
+nhưng tớ luôn ở đây khi cậu cần 😤😤.
+</p>
+</div>
+</section>
+
+<section>
+<div class="card">
+<h2>Gửi Ngiu Tớ 🙈</h2>
+<p>
+Chúc cậu một năm mới thật hạnh phúc,<br>
+kết thúc thực tập tốt đẹp,<br>
+và có tớ trong một góc tương lai :3<br>
+❤️🧡💛💚💙💜🤎
+</p>
+</div>
+</section>
+
+</div>
+
+<script>
+const slider = document.getElementById("slider");
+const totalSlides = 5;
+
+let currentSlide = 0;
+let startX = 0;
+let diffX = 0;
+let isDragging = false;
+
+const SWIPE_THRESHOLD = window.innerWidth * 0.2;
+
+slider.addEventListener("touchstart", e => {
+    startX = e.touches[0].clientX;
+    diffX = 0;
+    isDragging = true;
+    slider.style.transition = "none";
+});
+
+slider.addEventListener("touchmove", e => {
+    if (!isDragging) return;
+    diffX = e.touches[0].clientX - startX;
+    slider.style.transform =
+        `translateX(calc(-${currentSlide * 100}vw + ${diffX}px))`;
+});
+
+slider.addEventListener("touchend", () => {
+    if (!isDragging) return;
+    isDragging = false;
+
+    slider.style.transition = "transform 0.5s cubic-bezier(.22,.61,.36,1)";
+
+    if (diffX < -SWIPE_THRESHOLD && currentSlide < totalSlides - 1) {
+        currentSlide++;
+    } else if (diffX > SWIPE_THRESHOLD && currentSlide > 0) {
+        currentSlide--;
+    }
+
+    slider.style.transform = `translateX(-${currentSlide * 100}vw)`;
+
+    if (currentSlide === totalSlides - 1) startHearts();
+});
+
+/* ❤️🧧 HEART EFFECT */
+let heartInterval;
+function startHearts() {
+    if (heartInterval) return;
+
+    heartInterval = setInterval(() => {
+        const h = document.createElement("div");
+        h.className = "heart";
+        h.textContent = Math.random() > 0.5 ? "❤️" : "🧧";
+        h.style.left = Math.random() * window.innerWidth + "px";
+        document.body.appendChild(h);
+
+        setTimeout(() => h.remove(), 5000);
+    }, 400);
+}
+</script>
+
+</body>
+</html>
